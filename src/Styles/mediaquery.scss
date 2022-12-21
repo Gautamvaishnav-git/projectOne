@@ -1,0 +1,178 @@
+@media screen and (max-width: 820px) {
+  .home3 {
+    > div p {
+      padding: 0.5rem;
+    }
+  }
+  footer {
+    > div {
+      width: max-content;
+    }
+  }
+  .contact {
+    > main {
+      width: 100%;
+      height: 100vh;
+      border-radius: 0;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+
+      form {
+        margin: 0;
+      }
+
+      > form {
+        width: 100%;
+        div {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    width: 100%;
+    flex-direction: column;
+    > h1 {
+      font-size: 3rem;
+    }
+    > main {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  .home {
+    > main {
+      > h1 {
+        font-size: 15vw;
+      }
+      > p {
+        font-size: 1.5rem;
+      }
+    }
+    &::before {
+      border-radius: 0;
+    }
+  }
+  .home2 {
+    flex-direction: column;
+    > img,
+    div {
+      width: 100%;
+      padding: 2rem;
+    }
+  }
+  .home3 {
+    > div {
+      width: 100%;
+      border-radius: 0;
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  .home4 {
+    > div {
+      width: 100%;
+      border-radius: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  nav {
+    .toggleMenu {
+      display: inline;
+      position: absolute;
+      left: 30px;
+      top: 1.3rem;
+      font-size: 1.5rem;
+    }
+    h1 {
+      font-size: 1.7rem;
+    }
+    main {
+      display: none;
+      flex-direction: column;
+    }
+  }
+  .home2 {
+    div > p {
+      font-size: 1rem;
+    }
+  }
+  .home3 {
+    > div {
+      height: fit-content;
+    }
+  }
+  .home4 {
+    > div {
+      height: fit-content;
+    }
+  }
+  footer {
+    display: flex;
+    height: 20rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  nav {
+    h1 > a {
+      font-size: 9vw;
+    }
+  }
+  .home2 {
+    padding: 350px 0;
+    img,
+    div {
+      padding: 0.3rem;
+    }
+  }
+  .home3 {
+    div {
+      padding: 0.7rem;
+      h1 {
+        font-size: 10vw;
+      }
+      p {
+        padding: 0;
+      }
+    }
+  }
+  .contact {
+    > main {
+      padding: 0.4rem;
+
+      form {
+        div {
+          flex-direction: column;
+          input {
+            padding: 1rem;
+            width: 100%;
+          }
+          label {
+            margin: 0.4rem 0.5rem;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 420px) {
+  nav {
+    main {
+      display: flex !important;
+    }
+  }
+}

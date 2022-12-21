@@ -1,0 +1,49 @@
+@import "colors";
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: $first;
+  position: sticky;
+  top: 0%;
+  z-index: 10;
+
+  .toggleMenu {
+    display: none;
+  }
+  > h1 > a {
+    text-transform: uppercase;
+    color: $dark;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $third;
+    }
+  }
+  > main {
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+
+    > a {
+      text-transform: capitalize;
+      color: $dark;
+      margin: 1rem;
+
+      &:hover {
+        color: $third;
+      }
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: flex;
+  animation: show 0.2s ease-in alternate;
+}
